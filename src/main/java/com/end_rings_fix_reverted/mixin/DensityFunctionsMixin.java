@@ -14,6 +14,7 @@ public abstract class DensityFunctionsMixin {
             constant = @Constant(floatValue = -100.0F)
     )
     private static float seyValue(float constant, @Local(ordinal = 0, argsOnly = true) int subSectionX, @Local(ordinal = 1, argsOnly = true) int subSectionZ) {
-        return 100.0F - Mth.sqrt(subSectionX * subSectionX + subSectionZ * subSectionZ) * 8.0F;
+        float i = 100.0F - Mth.sqrt(subSectionX * subSectionX + subSectionZ * subSectionZ) * 8.0F;
+        return Math.clamp(i, -100.0F, 80.0F);
     }
 }

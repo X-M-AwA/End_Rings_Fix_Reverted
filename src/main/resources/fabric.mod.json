@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "end_rings_fix_reverted",
+	"version": "${version}",
+	"name": "End_Rings_Fix_Reverted",
+	"description": "回退末地环修复",
+	"authors": [
+		"XM-AwA"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/end_rings_fix_reverted/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.end_rings_fix_reverted.End_Rings_Fix_Reverted"
+		]
+	},
+	"mixins": [
+		"end_rings_fix_reverted.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~26.3-",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
